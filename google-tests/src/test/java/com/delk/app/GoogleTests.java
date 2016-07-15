@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Selenide.open;
 /**
  * Created by Serhiy_Golodychenko on 7/15/2016.
  */
-class GoogleTest {
+public class GoogleTests {
     @Test
     public void userCanSearchKeywordWithGoogle() throws Exception {
         open("http://google.com");
