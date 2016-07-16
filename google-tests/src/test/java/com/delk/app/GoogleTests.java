@@ -8,9 +8,6 @@ import static com.codeborne.selenide.Selenide.open;
  * Created by Serhiy_Golodychenko on 7/15/2016.
  */
 public class GoogleTests {
-    public GoogleTests() {
-    }
-
     @Test
     public void userCanSearchKeywordWithGoogle() throws Exception {
         System.setProperty("webdriver.chrome.driver", "D:\\Projects\\delk\\chromedriver\\chromedriver.exe");
