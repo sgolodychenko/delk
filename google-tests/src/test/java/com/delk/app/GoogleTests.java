@@ -13,7 +13,8 @@ public class GoogleTests {
 
     @Test
     public void userCanSearchKeywordWithGoogle() throws Exception {
-        open("http://google.com");
+        System.setProperty("webdriver.chrome.driver", "D:\\Projects\\delk\\chromedriver\\chromedriver.exe");
+        open("https://www.google.com.ua/");
 
     }
 }
