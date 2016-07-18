@@ -20,7 +20,7 @@ public class Account implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	public static Long nextId = 0L;
+	private static Long nextId;
 
 	@Id
 	protected Long id;
@@ -49,7 +49,9 @@ public class Account implements Serializable {
 	 * Default constructor for JPA only.
 	 */
 	protected Account() {
+
 		balance = BigDecimal.ZERO;
+		nextId = 0L;
 	}
 
 	public Account(String number, String owner) {
