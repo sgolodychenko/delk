@@ -20,5 +20,6 @@ public class GoogleTest {
         $(By.name("q")).setValue("delk").pressEnter();
         //$("#ires li.g").shouldHave(text("Wikipedia, the free encyclopedia"));
         $$("#ires .g").shouldHave(size(10));
+        //for testing
     }
 }
