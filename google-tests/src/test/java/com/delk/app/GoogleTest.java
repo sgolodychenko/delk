@@ -23,7 +23,7 @@ public class GoogleTest {
         $$("#ires .g").shouldHave(size(10));
         //zip 94949
     }
-    @Test
+    @Ignore @Test
     public void userCanGetEsuranceQuote() throws Exception {
         System.setProperty("webdriver.chrome.driver", "D:\\Projects\\delk\\chromedriver\\chromedriver.exe");
         open("https://www.esurance.com/");
