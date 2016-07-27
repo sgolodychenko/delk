@@ -14,7 +14,7 @@ import static org.openqa.selenium.By.name;
  */
 public class GoogleTest {
 
-    @Ignore @Test
+    @Test
     public void userCanSearchKeywordWithGoogle() throws Exception {
         System.setProperty("webdriver.chrome.driver", "D:\\Projects\\delk\\chromedriver\\chromedriver.exe");
         open("https://www.google.com.ua/");
