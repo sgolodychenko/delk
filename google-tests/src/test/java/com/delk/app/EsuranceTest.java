@@ -17,17 +17,10 @@ public class EsuranceTest {
 
     @Before
     public void setUp() throws Exception {
-        System.setProperty("webdriver.chrome.driver", "D:\\Projects\\delk\\chromedriver\\chromedriver.exe");
+        //System.setProperty("webdriver.chrome.driver", "D:\\Projects\\delk\\chromedriver\\chromedriver.exe");
+        System.setProperty("webdriver.gecko.driver", "D:\\Projects\\delk\\geckodriver\\geckodriver.exe");
     }
-    @Ignore @Test
-    public void userCanSearchKeywordWithGoogle() throws Exception {
-        System.setProperty("webdriver.chrome.driver", "D:\\Projects\\delk\\chromedriver\\chromedriver.exe");
-        open("https://www.google.com.ua/");
-        $(name("q")).setValue("delk").pressEnter();
-        //$("#ires li.g").shouldHave(text("Wikipedia, the free encyclopedia"));
-        $$("#ires .g").shouldHave(size(10));
-        //zip 94949
-    }
+
     @Test
     public void userCanGetQuoteByScenicRoute() throws Exception {
         open("https://www.esurance.com/");
@@ -133,4 +126,15 @@ public class EsuranceTest {
         $(id("confirmation_internal")).exists();
         System.out.println($(id("confirmation_internal")));
     }
+
+    @Ignore @Test
+    public void userCanSearchKeywordWithGoogle() throws Exception {
+        System.setProperty("webdriver.chrome.driver", "D:\\Projects\\delk\\chromedriver\\chromedriver.exe");
+        open("https://www.google.com.ua/");
+        $(name("q")).setValue("delk").pressEnter();
+        //$("#ires li.g").shouldHave(text("Wikipedia, the free encyclopedia"));
+        $$("#ires .g").shouldHave(size(10));
+        //zip 94949
+    }
+
 }
